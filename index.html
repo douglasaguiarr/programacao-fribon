@@ -174,20 +174,81 @@
     <option value="FRETE POR FORA"></option>
   </datalist>
 
-  <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 20px; }
-    h1 { text-align: center; margin-bottom: 10px; }
-    .busca { text-align: center; margin-bottom: 20px; }
-    .busca input { padding: 8px; width: 200px; margin: 0 10px; }
-    .dia { margin-bottom: 40px; background: #fff; border-radius: 8px; padding: 10px; box-shadow: 0 0 5px #ccc; }
-    .dia h2 { margin-top: 0; }
-    .usina { margin: 10px 0; width: 300px; padding: 6px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 5px; }
-    th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
-    th { background: #007bff; color: #fff; }
-    select, input { width: 100%; padding: 4px; }
-    .contagem { font-weight: bold; margin-left: 10px; }
-  </style>
+  
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 10px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .busca {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .busca input {
+    padding: 6px;
+    font-size: 12px;
+    width: 160px;
+    margin: 0 5px;
+  }
+  .dia {
+    margin-bottom: 25px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 0 3px #bbb;
+    font-size: 12px;
+  }
+  .dia h2 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  .usinas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .usina {
+    width: 200px;
+    padding: 4px;
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 4px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    text-align: center;
+    font-size: 12px;
+  }
+  th {
+    background: #007bff;
+    color: #fff;
+  }
+  select, input[type="text"] {
+    width: 100%;
+    font-size: 12px;
+    padding: 2px;
+  }
+  .contagem {
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+</style>
+
 </head>
 <body>
   <h1>Programação Fribon Rota MT</h1>
